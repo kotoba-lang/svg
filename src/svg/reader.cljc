@@ -13,7 +13,7 @@
   Extracted from kotoba-lang/kasane (kasane.svg, ADR-2606272100) as part of
   the kotoba-lang reverse-domain media/graphics standards-substrate split
   (com-junkawasaki/root)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.edn :as edn]))
 
 (defn attrs

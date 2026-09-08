@@ -1,7 +1,7 @@
 (ns svg.css
   "CSS as EDN for SVG. Similar to kami.css / shadow-css authoring: style maps,
   rules, @keyframes, and inline <style> hiccup."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def unitless
   #{:opacity :fill-opacity :stroke-opacity :stop-opacity :font-weight
