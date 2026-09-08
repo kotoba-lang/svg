@@ -7,7 +7,7 @@
 
   This namespace renders that shape deterministically and keeps the data small
   enough to pass through kotoba CLJ/EDN pipelines."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def svg-ns "http://www.w3.org/2000/svg")
 
@@ -87,7 +87,7 @@
 (defn- kebab-name [k]
   (-> (name k)
       (str/replace #"([a-z0-9])([A-Z])" "$1-$2")
-      (str/lower-case)))
+      (str/lower)))
 
 (def ^:private case-sensitive-attrs
   #{:attributeName :attributeType :baseFrequency :calcMode :clipPathUnits
